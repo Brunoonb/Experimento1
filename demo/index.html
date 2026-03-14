@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System Demo</title>
+    <link rel="stylesheet" href="../styles/design-tokens.css" />
+    <link rel="stylesheet" href="../styles/semantic-themes.css" />
+    <link rel="stylesheet" href="../src/components/base-components.css" />
+    <style>
+      body { margin: 0; }
+      .toolbar { display:flex; gap:8px; }
+      h1, h2 { margin: 0 0 12px 0; }
+    </style>
+  </head>
+  <body>
+    <main class="ds-page">
+      <div class="ds-layout">
+        <div class="toolbar">
+          <button class="ds-button" id="toggle-theme">Alternar tema</button>
+        </div>
+
+        <section class="ds-card">
+          <h1>Design System Components</h1>
+          <div class="ds-grid">
+            <div class="ds-field"><label class="ds-label">Input</label><input class="ds-input" placeholder="Nome" /></div>
+            <div class="ds-field"><label class="ds-label">Select</label><select class="ds-select"><option>Opção A</option><option>Opção B</option></select></div>
+            <div class="ds-field"><label class="ds-label">Search</label><input class="ds-search" placeholder="Pesquisar..." /></div>
+            <div class="ds-field"><label class="ds-label">Combobox</label><input list="items" class="ds-combobox" placeholder="Selecione" /><datalist id="items"><option value="Item 1"/><option value="Item 2"/></datalist></div>
+          </div>
+        </section>
+
+        <section class="ds-card">
+          <h2>Selection controls</h2>
+          <label class="ds-control-inline"><input type="checkbox" class="ds-checkbox" checked /> Checkbox</label>
+          <label class="ds-control-inline"><input type="radio" name="size" checked /> Radio</label>
+          <label class="ds-control-inline ds-switch"><input type="checkbox" checked /><span class="ds-switch-slider"></span></label>
+          <span>Switch</span>
+        </section>
+
+        <section class="ds-card">
+          <h2>Tags, chips, menu, dropdown and progress</h2>
+          <p>
+            <span class="ds-tag">Tag</span>
+            <span class="ds-chip">Chip ✕</span>
+          </p>
+
+          <div class="ds-dropdown">
+            <button class="ds-button">Dropdown</button>
+            <div class="ds-dropdown-menu">
+              <div class="ds-menu-item">Ação 1</div>
+              <div class="ds-menu-item">Ação 2</div>
+              <div class="ds-menu-item">Ação 3</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 12px" class="ds-menu">
+            <div class="ds-menu-item">Menu item 1</div>
+            <div class="ds-menu-item">Menu item 2</div>
+            <div class="ds-menu-item">Menu item 3</div>
+          </div>
+
+          <div style="margin-top: 12px" class="ds-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+            <div class="ds-progress-bar"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      const btn = document.getElementById('toggle-theme');
+      btn.addEventListener('click', () => {
+        const root = document.documentElement;
+        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      });
+    </script>
+  </body>
+</html>

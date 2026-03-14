@@ -1,0 +1,22 @@
+{
+  "dimension": {
+    "scale": { "$type": "dimension", "$value": "2" },
+    "xs": { "$type": "dimension", "$value": "4" },
+    "sm": { "$type": "dimension", "$value": "{dimension.xs} * {dimension.scale}" },
+    "md": { "$type": "dimension", "$value": "{dimension.sm} * {dimension.scale}" },
+    "lg": { "$type": "dimension", "$value": "{dimension.md} * {dimension.scale}" },
+    "xl": { "$type": "dimension", "$value": "{dimension.lg} * {dimension.scale}" }
+  },
+  "spacing": {
+    "xs": { "$type": "spacing", "$value": "{dimension.xs}" },
+    "sm": { "$type": "spacing", "$value": "{dimension.sm}" },
+    "md": { "$type": "spacing", "$value": "{dimension.md}" },
+    "lg": { "$type": "spacing", "$value": "{dimension.lg}" },
+    "xl": { "$type": "spacing", "$value": "{dimension.xl}" }
+  },
+  "borderRadius": {
+    "sm": { "$type": "borderRadius", "$value": "4" },
+    "lg": { "$type": "borderRadius", "$value": "8" },
+    "xl": { "$type": "borderRadius", "$value": "16" }
+  }
+}

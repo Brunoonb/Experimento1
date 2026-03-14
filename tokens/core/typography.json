@@ -1,0 +1,32 @@
+{
+  "fontFamilies": {
+    "heading": { "$type": "fontFamilies", "$value": "Inter" },
+    "body": { "$type": "fontFamilies", "$value": "Roboto" }
+  },
+  "lineHeights": {
+    "heading": { "$type": "lineHeights", "$value": "110%" },
+    "body": { "$type": "lineHeights", "$value": "140%" }
+  },
+  "letterSpacing": {
+    "default": { "$type": "letterSpacing", "$value": "0" },
+    "increased": { "$type": "letterSpacing", "$value": "150%" },
+    "decreased": { "$type": "letterSpacing", "$value": "-5%" }
+  },
+  "fontWeights": {
+    "headingRegular": { "$type": "fontWeights", "$value": "Regular" },
+    "headingBold": { "$type": "fontWeights", "$value": "Bold" },
+    "bodyRegular": { "$type": "fontWeights", "$value": "Regular" },
+    "bodyBold": { "$type": "fontWeights", "$value": "Bold" }
+  },
+  "fontSizes": {
+    "h1": { "$type": "fontSizes", "$value": "roundTo({fontSizes.body}*1.25^5)" },
+    "h2": { "$type": "fontSizes", "$value": "roundTo({fontSizes.body}*1.25^4)" },
+    "h3": { "$type": "fontSizes", "$value": "roundTo({fontSizes.body}*1.25^3)" },
+    "h4": { "$type": "fontSizes", "$value": "roundTo({fontSizes.body}*1.25^2)" },
+    "h5": { "$type": "fontSizes", "$value": "roundTo({fontSizes.body}*1.25^1)" },
+    "h6": { "$type": "fontSizes", "$value": "{fontSizes.body}" },
+    "body": { "$type": "fontSizes", "$value": "16" },
+    "sm": { "$type": "fontSizes", "$value": "{fontSizes.body} * 0.85" },
+    "xs": { "$type": "fontSizes", "$value": "{fontSizes.body} * 0.65" }
+  }
+}
