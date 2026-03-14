@@ -1,0 +1,20 @@
+{
+  "semantic": {
+    "color": {
+      "background": { "$type": "color", "$value": "{colors.gray.900}" },
+      "surface": { "$type": "color", "$value": "{colors.gray.800}" },
+      "text": {
+        "primary": { "$type": "color", "$value": "{colors.gray.100}" },
+        "secondary": { "$type": "color", "$value": "{colors.gray.300}" },
+        "inverse": { "$type": "color", "$value": "{colors.gray.900}" }
+      },
+      "border": { "$type": "color", "$value": "{colors.gray.700}" },
+      "action": {
+        "primary": { "$type": "color", "$value": "{colors.blue.400}" },
+        "primaryHover": { "$type": "color", "$value": "{colors.blue.300}" }
+      },
+      "success": { "$type": "color", "$value": "{colors.green.100}" },
+      "danger": { "$type": "color", "$value": "{colors.red.100}" }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "semantic": {
+    "color": {
+      "background": { "$type": "color", "$value": "{colors.white}" },
+      "surface": { "$type": "color", "$value": "{colors.gray.100}" },
+      "text": {
+        "primary": { "$type": "color", "$value": "{colors.gray.900}" },
+        "secondary": { "$type": "color", "$value": "{colors.gray.700}" },
+        "inverse": { "$type": "color", "$value": "{colors.white}" }
+      },
+      "border": { "$type": "color", "$value": "{colors.gray.300}" },
+      "action": {
+        "primary": { "$type": "color", "$value": "{colors.blue.600}" },
+        "primaryHover": { "$type": "color", "$value": "{colors.blue.700}" }
+      },
+      "success": { "$type": "color", "$value": "{colors.green.600}" },
+      "danger": { "$type": "color", "$value": "{colors.red.600}" }
+    },
+    "component": {
+      "button": {
+        "radius": { "$type": "borderRadius", "$value": "{borderRadius.lg}" },
+        "paddingY": { "$type": "spacing", "$value": "{spacing.sm}" },
+        "paddingX": { "$type": "spacing", "$value": "{spacing.md}" }
+      },
+      "card": {
+        "radius": { "$type": "borderRadius", "$value": "{borderRadius.xl}" },
+        "padding": { "$type": "spacing", "$value": "{spacing.lg}" }
+      },
+      "input": {
+        "radius": { "$type": "borderRadius", "$value": "{borderRadius.sm}" },
+        "paddingY": { "$type": "spacing", "$value": "{spacing.sm}" },
+        "paddingX": { "$type": "spacing", "$value": "{spacing.md}" }
+      }
+    }
+  }
+}

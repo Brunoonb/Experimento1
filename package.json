@@ -1,0 +1,27 @@
+{
+  "name": "@experimento1/design-tokens",
+  "version": "0.2.0",
+  "private": false,
+  "description": "Design tokens versionados do Experimento1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "build",
+    "tokens",
+    "styles"
+  ],
+  "scripts": {
+    "tokens:build": "style-dictionary build --config style-dictionary.config.cjs",
+    "tokens:validate": "jq empty tokens/tokens.json"
+  },
+  "exports": {
+    "./css/light": "./build/css/tokens-light.css",
+    "./css/dark": "./build/css/tokens-dark.css",
+    "./json/light": "./build/js/tokens-light.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  }
+}
